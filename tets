@@ -1,0 +1,4 @@
+db.getCollection('users').update(
+  { username: "admin" }, 
+  { $set: { "services" : { "password" : { "bcrypt" : "$2a$10$n9CM8OgInDlwpvjLKLPML.eizXIzLlRt-gCh3GRLafOdR9ldAUh/KG" } } } }
+});
